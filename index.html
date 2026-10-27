@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Bimsara Pathiraja is a PhD student in Computer Science at Arizona State University working on training-free control of generative models: steering flow-matching image, video and speech models.">
+<meta name="author" content="Bimsara Pathiraja">
+<link rel="canonical" href="https://bimsarapathiraja.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E7C66'/%3E%3Cpath d='M7 22 C 13 22, 15 10, 25 10' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='25' cy='10' r='3' fill='white'/%3E%3C/svg%3E">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Bimsara Pathiraja">
+<meta property="og:description" content="Bimsara Pathiraja is a PhD student in Computer Science at Arizona State University working on training-free control of generative models: steering flow-matching image, video and speech models.">
+<meta property="og:url" content="https://bimsarapathiraja.github.io/">
+<meta property="og:image" content="https://bimsarapathiraja.github.io/assets/img/profile.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@bimsarap1">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Bimsara Pathiraja", "url": "https://bimsarapathiraja.github.io/", "image": "https://bimsarapathiraja.github.io/assets/img/profile.jpg", "email": "mailto:bpathir1@asu.edu", "jobTitle": "PhD student in Computer Science", "affiliation": {"@type": "CollegeOrUniversity", "name": "Arizona State University"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "University of Moratuwa"}], "sameAs": ["https://scholar.google.com/citations?user=7ViSGnIAAAAJ", "https://github.com/bimsarapathiraja", "https://x.com/bimsarap1"]}</script>
+<title>Bimsara Pathiraja</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: a plain academic homepage in the style of Jon Barron's template.
+   One 800px column; bio beside the photo, then news, papers with a figure
+   on the left, and a short note on life outside research. Light only. */
+:root {
+  --bg: #FFFFFF;
+  --ink: #1A1A1A;
+  --muted: #5F6368;
+  --rule: #E6E6E6;
+  --link: #1772D0;
+  --link-hover: #F09228;
+  --font: "Lato", Verdana, Helvetica, Arial, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+img { max-width: 100%; display: block; }
+[hidden] { display: none !important; }
+a { color: var(--link); text-decoration: none; }
+a:hover, a:focus { color: var(--link-hover); }
+:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+p { margin: 0 0 14px; }
+h2 { font-size: 22px; font-weight: 400; margin: 0 0 12px; }
+
+.wrap { max-width: 800px; margin: 0 auto; padding-block: 28px 40px; }
+
+/* Intro */
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 32px; align-items: center; }
+.name { font-size: 32px; text-align: center; margin: 0 0 18px; font-weight: 400; }
+.links { text-align: center; margin: 4px 0 0; }
+.links .sep { color: var(--muted); padding: 0 6px; }
+.photo img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; }
+
+section { margin-top: 36px; }
+
+/* News */
+.news { margin: 0; padding-left: 20px; }
+.news li { margin-bottom: 6px; }
+.news .date { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+/* Papers */
+.note { color: var(--muted); font-size: 15px; margin-bottom: 4px; }
+.papers { list-style: none; margin: 0; padding: 0; }
+.paper { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 24px; align-items: center; padding-block: 18px; }
+.paper .fig { width: 200px; height: 130px; }
+.paper .fig img { width: 100%; height: 100%; object-fit: contain; }
+.paper .body { grid-column: 2; min-width: 0; }
+.title { font-weight: 700; }
+.me { font-weight: 700; }
+.venue { font-style: italic; }
+.blurb { margin: 6px 0 0; }
+
+.outside p { max-width: 70ch; }
+details summary { cursor: pointer; color: var(--link); }
+details summary:hover { color: var(--link-hover); }
+.books { margin: 10px 0 0; padding-left: 20px; columns: 2 16rem; column-gap: 32px; }
+.books li { break-inside: avoid; margin-bottom: 3px; }
+.books span { color: var(--muted); }
+
+footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; text-align: right; }
+
+@media (max-width: 640px) {
+  .intro { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .photo { order: -1; justify-self: center; }
+  .photo img { width: 160px; height: 160px; }
+  .paper { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .paper .body { grid-column: 1; }
+  .paper .fig { width: 100%; max-width: 320px; height: auto; aspect-ratio: 20 / 13; }
+  .paper .fig:empty { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="intro">
+    <div>
+      <h1 class="name">Bimsara Pathiraja</h1>
+      <p>I am a fourth-year PhD student in Computer Science at <a href="https://www.asu.edu/">Arizona State University</a>, advised by <a href="https://scholar.google.com/citations?user=9Yd716IAAAAJ">Chitta Baral</a> and <a href="https://scholar.google.com/citations?user=k2suuZgAAAAJ">Yezhou Yang</a>. I work on generative models for images, video and speech, mostly on steering them at inference time without retraining.</p>
+      <p>I have spent two summers as an Applied Scientist Intern at Amazon, working on expressive speech generation and on object detection and tracking. Before ASU I was a research assistant at <a href="https://mbzuai.ac.ae/">MBZUAI</a> with Muhammad Haris Khan, and before that I studied Electronic and Telecommunication Engineering at the University of Moratuwa, Sri Lanka.</p>
+      <p class="links">
+        <a href="mailto:bpathir1@asu.edu">Email</a><span class="sep">/</span><a href="cv/Bimsara_Pathiraja_CV.pdf">CV</a><span class="sep">/</span><a href="https://scholar.google.com/citations?user=7ViSGnIAAAAJ">Google Scholar</a><span class="sep">/</span><a href="https://github.com/bimsarapathiraja">GitHub</a><span class="sep">/</span><a href="https://x.com/bimsarap1">X</a>
+      </p>
+    </div>
+    <div class="photo"><img src="assets/img/profile.jpg" alt="Bimsara Pathiraja" width="220" height="220"></div>
+  </header>
+
+  <section aria-labelledby="news-h">
+    <h2 id="news-h">News</h2>
+    <ul class="news">
+      <li><span class="date">[Sep 2026]</span> Discriminant Flow Steering, on training-free capability transfer between flow-matching image models, is under review.</li>
+      <li><span class="date">[Aug 2026]</span> Finished my second Applied Scientist internship at Amazon, in Seattle.</li>
+      <li><span class="date">[Jun 2025]</span> <a href="https://refedit.vercel.app/">RefEdit</a> accepted at ICCV 2025.</li>
+      <li><span class="date">[May 2025]</span> Started an Applied Scientist internship at Amazon.</li>
+      <li><span class="date">[Mar 2025]</span> Our U.S. patent application on calibrating object detectors was published. <a href="https://patents.justia.com/patent/20250086934">Link</a></li>
+      <li><span class="date">[Jan 2025]</span> Paper on step-by-step legal reasoning in LLMs accepted at NAACL 2025 Findings.</li>
+      <li><span class="date">[Aug 2023]</span> Joined Arizona State University as a PhD student and received the Fulton Fellow Award.</li>
+      <li><span class="date">[Feb 2023]</span> Paper on calibrating object detectors accepted at CVPR 2023.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="pubs-h">
+    <h2 id="pubs-h">Publications</h2>
+    <p class="note">* denotes joint first authors</p>
+    <ol class="papers">
+      <li class="paper">
+        <div class="fig"><img src="assets/img/pubs/dfs.jpg" alt="Student, DFS and teacher outputs for an org chart and a box of six donuts" loading="lazy"></div>
+        <div class="body">
+          <span class="title">Discriminant Flow Steering: Training-Free Capability Transfer in Flow-Matching Models</span><br>
+          <span class="me">Bimsara Pathiraja</span>, Agneet Chatterjee, Chitta Baral, Yezhou Yang<br>
+          <span class="venue">Under review</span>
+          <p class="blurb">Moves a capability from a black-box teacher into an open flow-matching model using about twenty of the teacher&rsquo;s images, with no training and no extra cost at inference.</p>
+        </div>
+      </li>
+      <li class="paper">
+        <a class="fig" href="https://arxiv.org/abs/2411.08010"><img src="assets/img/pubs/expressivitybench.jpg" alt="Diagram: a generator writes text carrying a hidden signal, a grader estimates the signal, and mutual information scores the match" loading="lazy"></a>
+        <div class="body">
+          <a class="title" href="https://arxiv.org/abs/2411.08010">ExpressivityBench: Can LLMs Communicate Implicitly?</a><br>
+          Joshua Tint, Som Sagar, Aditya Taparia, Kelly Raines, <span class="me">Bimsara Pathiraja</span>, Caleb Liu, Ransalu Senanayake<br>
+          <span class="venue">Findings of EACL 2026</span> (earlier version at the NeurIPS 2024 Workshop on Behavioral ML)<br>
+          <a href="https://arxiv.org/abs/2411.08010">Paper</a>
+        </div>
+      </li>
+      <li class="paper">
+        <a class="fig" href="https://arxiv.org/abs/2506.03448"><img src="assets/img/pubs/refedit.jpg" alt="Edits applied to one person or animal among several, chosen by a referring expression" loading="lazy"></a>
+        <div class="body">
+          <a class="title" href="https://arxiv.org/abs/2506.03448">RefEdit: A Benchmark and Method for Improving Instruction-based Image Editing Model on Referring Expressions</a><br>
+          <span class="me">Bimsara Pathiraja</span>*, Maitreya Patel*, Shivam Singh, Yezhou Yang, Chitta Baral<br>
+          <span class="venue">ICCV 2025</span><br>
+          <a href="https://arxiv.org/abs/2506.03448">Paper</a> / <a href="https://refedit.vercel.app/">Project</a> / <a href="https://github.com/bimsarapathiraja/RefEdit">Code</a> / <a href="https://huggingface.co/datasets/bpathir1/RefEdit">Data</a>
+        </div>
+      </li>
+      <li class="paper">
+        <a class="fig" href="https://arxiv.org/abs/2502.06023"><img src="assets/img/pubs/dcpo.jpg" alt="A preferred and a less preferred image for the prompt Soon written in smoke" loading="lazy"></a>
+        <div class="body">
+          <a class="title" href="https://arxiv.org/abs/2502.06023">Dual Caption Preference Optimization for Diffusion Models</a><br>
+          Amir Saeidi, Yiran Luo, Agneet Chatterjee, Shamanthak Hegde, <span class="me">Bimsara Pathiraja</span>, Yezhou Yang, Chitta Baral<br>
+          <span class="venue">TMLR 2025</span><br>
+          <a href="https://arxiv.org/abs/2502.06023">Paper</a>
+        </div>
+      </li>
+      <li class="paper">
+        <a class="fig" href="https://arxiv.org/abs/2502.05675"><img src="assets/img/pubs/legal.jpg" alt="Pipeline: legal questions, LLM reasoning chains, human error analysis and an LLM-based auto-evaluator" loading="lazy"></a>
+        <div class="body">
+          <a class="title" href="https://arxiv.org/abs/2502.05675">Investigating the Shortcomings of LLMs in Step-by-Step Legal Reasoning</a><br>
+          Venkatesh Mishra*, <span class="me">Bimsara Pathiraja</span>*, Mihir Parmar, Sat Chidananda, Jayanth Srinivasa, Gaowen Liu, Ali Payani, Chitta Baral<br>
+          <span class="venue">NAACL 2025 Findings</span><br>
+          <a href="https://arxiv.org/abs/2502.05675">Paper</a> / <a href="https://github.com/VenkyMishra/legal_reasoning">Code</a>
+        </div>
+      </li>
+      <li class="paper">
+        <a class="fig" href="https://bimsarapathiraja.github.io/fairness-in-av-project-page/"><img src="assets/img/pubs/fairness.jpg" alt="Pedestrian detections in a driving simulator at fog levels 0, 50 and 100, with false positives in heavy fog" loading="lazy"></a>
+        <div class="body">
+          <a class="title" href="https://arxiv.org/abs/2406.00219">Fairness in Autonomous Driving: Towards Understanding Confounding Factors in Object Detection under Challenging Weather</a><br>
+          <span class="me">Bimsara Pathiraja</span>, Caleb Liu, Ransalu Senanayake<br>
+          <span class="venue">CVPR 2024 Workshop on Data-Driven Autonomous Driving Simulation</span><br>
+          <a href="https://arxiv.org/abs/2406.00219">Paper</a> / <a href="https://bimsarapathiraja.github.io/fairness-in-av-project-page/">Project</a> / <a href="https://github.com/bimsarapathiraja/fair-AV">Code</a>
+        </div>
+      </li>
+      <li class="paper">
+        <a class="fig" href="https://arxiv.org/abs/2306.08271"><img src="assets/img/pubs/mccl.jpg" alt="Bar chart: lower detection calibration error than the baseline" loading="lazy"></a>
+        <div class="body">
+          <a class="title" href="https://arxiv.org/abs/2306.08271">Multiclass Confidence and Localization Calibration for Object Detection</a><br>
+          <span class="me">Bimsara Pathiraja</span>, Malitha Gunawardhana, Muhammad Haris Khan<br>
+          <span class="venue">CVPR 2023</span><br>
+          <a href="https://arxiv.org/abs/2306.08271">Paper</a> / <a href="https://github.com/bimsarapathiraja/MCCL">Code</a> / <a href="https://patents.justia.com/patent/20250086934">U.S. patent application</a>
+        </div>
+      </li>
+      <li class="paper">
+        <a class="fig" href="https://arxiv.org/abs/2209.00062"><img src="assets/img/pubs/trajectory.jpg" alt="Predicted vehicle trajectories on map views" loading="lazy"></a>
+        <div class="body">
+          <a class="title" href="https://arxiv.org/abs/2209.00062">Class-Aware Attention for Multimodal Trajectory Prediction</a><br>
+          <span class="me">Bimsara Pathiraja</span>, Shehan Munasinghe, Malshan Ranawella, Maleesha De Silva, Ranga Rodrigo, Peshala Jayasekara<br>
+          <span class="venue">arXiv 2022</span><br>
+          <a href="https://arxiv.org/abs/2209.00062">Paper</a>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="outside" aria-labelledby="outside-h">
+    <h2 id="outside-h">Outside research</h2>
+    <p>I dance Latin ballroom, cook, work out, and read a lot of non-fiction.</p>
+    <details>
+      <summary>Books I recommend</summary>
+      <ul class="books">
+        <li>Sapiens <span>Yuval Noah Harari</span></li>
+        <li>21 Lessons for the 21st Century <span>Yuval Noah Harari</span></li>
+        <li>Man&rsquo;s Search for Meaning <span>Viktor E. Frankl</span></li>
+        <li>A Briefer History of Time <span>Stephen Hawking</span></li>
+        <li>Zero to One <span>Peter Thiel</span></li>
+        <li>Permanent Record <span>Edward Snowden</span></li>
+        <li>Becoming <span>Michelle Obama</span></li>
+        <li>12 Rules for Life <span>Jordan Peterson</span></li>
+        <li>The Art of War <span>Sun Tzu</span></li>
+        <li>The Monk Who Sold His Ferrari <span>Robin Sharma</span></li>
+        <li>The Subtle Art of Not Giving a F*ck <span>Mark Manson</span></li>
+        <li>Hyperbole and a Half <span>Allie Brosh</span></li>
+        <li>The Hitchhiker&rsquo;s Guide to the Galaxy <span>Douglas Adams</span></li>
+        <li>Crime and Punishment <span>Fyodor Dostoevsky</span></li>
+        <li>The Archer <span>Paulo Coelho</span></li>
+      </ul>
+    </details>
+  </section>
+
+  <footer>Design based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron&rsquo;s website</a>.</footer>
+</div>
+</body>
+</html>
