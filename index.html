@@ -6,7 +6,7 @@
 <meta name="description" content="Bimsara Pathiraja is a PhD student in Computer Science at Arizona State University working on training-free control of generative models: steering flow-matching image, video and speech models.">
 <meta name="author" content="Bimsara Pathiraja">
 <link rel="canonical" href="https://bimsarapathiraja.github.io/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E7C66'/%3E%3Cpath d='M7 22 C 13 22, 15 10, 25 10' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='25' cy='10' r='3' fill='white'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231772D0'/%3E%3Cpath d='M6 7H13.4V8.4H11.9L16.4 21L21.6 8.4H20.4V7H26V8.4H24.6L17.2 26H15.4L7.7 8.4H6Z' fill='white'/%3E%3C/svg%3E">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Bimsara Pathiraja">
 <meta property="og:description" content="Bimsara Pathiraja is a PhD student in Computer Science at Arizona State University working on training-free control of generative models: steering flow-matching image, video and speech models.">
@@ -87,7 +87,8 @@ details summary:hover { color: var(--link-hover); }
 .books li { break-inside: avoid; margin-bottom: 3px; }
 .books span { color: var(--muted); }
 
-footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; text-align: right; }
+footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; }
+.motto { font-style: italic; }
 
 @media (max-width: 640px) {
   .intro { grid-template-columns: minmax(0, 1fr); gap: 8px; }
@@ -142,30 +143,12 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule);
         </div>
       </li>
       <li class="paper">
-        <a class="fig" href="https://arxiv.org/abs/2411.08010"><img src="assets/img/pubs/expressivitybench.jpg" alt="Diagram: a generator writes text carrying a hidden signal, a grader estimates the signal, and mutual information scores the match" loading="lazy"></a>
-        <div class="body">
-          <a class="title" href="https://arxiv.org/abs/2411.08010">ExpressivityBench: Can LLMs Communicate Implicitly?</a><br>
-          Joshua Tint, Som Sagar, Aditya Taparia, Kelly Raines, <span class="me">Bimsara Pathiraja</span>, Caleb Liu, Ransalu Senanayake<br>
-          <span class="venue">Findings of EACL 2026</span> (earlier version at the NeurIPS 2024 Workshop on Behavioral ML)<br>
-          <a href="https://arxiv.org/abs/2411.08010">Paper</a>
-        </div>
-      </li>
-      <li class="paper">
         <a class="fig" href="https://arxiv.org/abs/2506.03448"><img src="assets/img/pubs/refedit.jpg" alt="Edits applied to one person or animal among several, chosen by a referring expression" loading="lazy"></a>
         <div class="body">
           <a class="title" href="https://arxiv.org/abs/2506.03448">RefEdit: A Benchmark and Method for Improving Instruction-based Image Editing Model on Referring Expressions</a><br>
           <span class="me">Bimsara Pathiraja</span>*, Maitreya Patel*, Shivam Singh, Yezhou Yang, Chitta Baral<br>
           <span class="venue">ICCV 2025</span><br>
           <a href="https://arxiv.org/abs/2506.03448">Paper</a> / <a href="https://refedit.vercel.app/">Project</a> / <a href="https://github.com/bimsarapathiraja/RefEdit">Code</a> / <a href="https://huggingface.co/datasets/bpathir1/RefEdit">Data</a>
-        </div>
-      </li>
-      <li class="paper">
-        <a class="fig" href="https://arxiv.org/abs/2502.06023"><img src="assets/img/pubs/dcpo.jpg" alt="A preferred and a less preferred image for the prompt Soon written in smoke" loading="lazy"></a>
-        <div class="body">
-          <a class="title" href="https://arxiv.org/abs/2502.06023">Dual Caption Preference Optimization for Diffusion Models</a><br>
-          Amir Saeidi, Yiran Luo, Agneet Chatterjee, Shamanthak Hegde, <span class="me">Bimsara Pathiraja</span>, Yezhou Yang, Chitta Baral<br>
-          <span class="venue">TMLR 2025</span><br>
-          <a href="https://arxiv.org/abs/2502.06023">Paper</a>
         </div>
       </li>
       <li class="paper">
@@ -178,12 +161,12 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule);
         </div>
       </li>
       <li class="paper">
-        <a class="fig" href="https://bimsarapathiraja.github.io/fairness-in-av-project-page/"><img src="assets/img/pubs/fairness.jpg" alt="Pedestrian detections in a driving simulator at fog levels 0, 50 and 100, with false positives in heavy fog" loading="lazy"></a>
+        <a class="fig" href="https://arxiv.org/abs/2502.06023"><img src="assets/img/pubs/dcpo.jpg" alt="A preferred and a less preferred image for the prompt Soon written in smoke" loading="lazy"></a>
         <div class="body">
-          <a class="title" href="https://arxiv.org/abs/2406.00219">Fairness in Autonomous Driving: Towards Understanding Confounding Factors in Object Detection under Challenging Weather</a><br>
-          <span class="me">Bimsara Pathiraja</span>, Caleb Liu, Ransalu Senanayake<br>
-          <span class="venue">CVPR 2024 Workshop on Data-Driven Autonomous Driving Simulation</span><br>
-          <a href="https://arxiv.org/abs/2406.00219">Paper</a> / <a href="https://bimsarapathiraja.github.io/fairness-in-av-project-page/">Project</a> / <a href="https://github.com/bimsarapathiraja/fair-AV">Code</a>
+          <a class="title" href="https://arxiv.org/abs/2502.06023">Dual Caption Preference Optimization for Diffusion Models</a><br>
+          Amir Saeidi, Yiran Luo, Agneet Chatterjee, Shamanthak Hegde, <span class="me">Bimsara Pathiraja</span>, Yezhou Yang, Chitta Baral<br>
+          <span class="venue">TMLR 2025</span><br>
+          <a href="https://arxiv.org/abs/2502.06023">Paper</a>
         </div>
       </li>
       <li class="paper">
@@ -193,6 +176,24 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule);
           <span class="me">Bimsara Pathiraja</span>, Malitha Gunawardhana, Muhammad Haris Khan<br>
           <span class="venue">CVPR 2023</span><br>
           <a href="https://arxiv.org/abs/2306.08271">Paper</a> / <a href="https://github.com/bimsarapathiraja/MCCL">Code</a> / <a href="https://patents.justia.com/patent/20250086934">U.S. patent application</a>
+        </div>
+      </li>
+      <li class="paper">
+        <a class="fig" href="https://arxiv.org/abs/2411.08010"><img src="assets/img/pubs/expressivitybench.jpg" alt="Diagram: a generator writes text carrying a hidden signal, a grader estimates the signal, and mutual information scores the match" loading="lazy"></a>
+        <div class="body">
+          <a class="title" href="https://arxiv.org/abs/2411.08010">ExpressivityBench: Can LLMs Communicate Implicitly?</a><br>
+          Joshua Tint, Som Sagar, Aditya Taparia, Kelly Raines, <span class="me">Bimsara Pathiraja</span>, Caleb Liu, Ransalu Senanayake<br>
+          <span class="venue">Findings of EACL 2026</span> (earlier version at the NeurIPS 2024 Workshop on Behavioral ML)<br>
+          <a href="https://arxiv.org/abs/2411.08010">Paper</a>
+        </div>
+      </li>
+      <li class="paper">
+        <a class="fig" href="https://bimsarapathiraja.github.io/fairness-in-av-project-page/"><img src="assets/img/pubs/fairness.jpg" alt="Pedestrian detections in a driving simulator at fog levels 0, 50 and 100, with false positives in heavy fog" loading="lazy"></a>
+        <div class="body">
+          <a class="title" href="https://arxiv.org/abs/2406.00219">Fairness in Autonomous Driving: Towards Understanding Confounding Factors in Object Detection under Challenging Weather</a><br>
+          <span class="me">Bimsara Pathiraja</span>, Caleb Liu, Ransalu Senanayake<br>
+          <span class="venue">CVPR 2024 Workshop on Data-Driven Autonomous Driving Simulation</span><br>
+          <a href="https://arxiv.org/abs/2406.00219">Paper</a> / <a href="https://bimsarapathiraja.github.io/fairness-in-av-project-page/">Project</a> / <a href="https://github.com/bimsarapathiraja/fair-AV">Code</a>
         </div>
       </li>
       <li class="paper">
@@ -232,7 +233,7 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--rule);
     </details>
   </section>
 
-  <footer>Design based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron&rsquo;s website</a>.</footer>
+  <footer><span class="motto" lang="la">Veni, vidi, vici.</span><span>Design based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron&rsquo;s website</a>.</span></footer>
 </div>
 </body>
 </html>
